@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <link rel="shortcut icon" href="img1/pngfind.com-react-logo-png-6854994.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="logo">
+            <img src="img1/website_logo.png" alt="website_logo" class="logopic" width="90px">
+            Frontend
+        </a>
+        <button class="btn">
+            <div class="dash dash1"></div>
+            <div class="dash dash2"></div>
+            <div class="dash dash3"></div>
+        </button>
+        <ul class="list">
+            <li class="item">
+                <a href="index.html" class="link">HTML</a>
+            </li>
+            <li class="item">
+                <a href="csspage.html" class="link">CSS</a>
+            </li>
+            <li class="item">
+                <a href="#" class="link">JavaScript</a>
+            </li>
+        </ul>
+    </div>
+    <div class="js container">
+        <div>
+            <span class="jsfunc">document.querySelector(`.class/#id/tag`)</span> - HTML dagi istalgan elementni JavaScript da tanlaydi
+        </div>
+        <div class="code">
+            let title = document.querySelector('#title');
+            <br>
+            let button = document.querySelector('.btn');
+        </div>
+        <hr class="line">
+        <div>
+            <span class="jsfunc">addEventListener()</span> - tanlangan elementda biror hodisa ro'y berganda, biror ishni bajaradi
+        </div>
+        <div class="code">
+            button.addEventListener('click', () = > {
+                console.log('welcome');
+            });
+        </div>
+        <hr class="line">
+        <div>
+            <span class="jsfunc">element.classList.add('class')</span> - elementga class qo'shadi
+        </div>
+        <div>
+            <span class="jsfunc">element.classList.remove('class')</span> - elementdan class ni o'chiradi
+        </div>
+        <div>
+            <span class="jsfunc">element.classList.contains('class')</span> - elementda ma'lum class borligini tekshiradi, bor bo'lsa true qaytaradi
+        </div>
+<pre class="code">
+const btn = document.querySelector('.btn1');
+const image = document.querySelector('.image');
+
+btn.addEventListener('click', () => {
+    if(image.classList.contains('changeimage')){
+        image.classList.remove('changeimage');
+    } else {
+        image.classList.add('changeimage');
+    }
+});
+</pre>
+        <div>Yuqoridagi kod knopka bosilganda rasm ning changeimage nomli class i bor yoki yo'qligini tekshiradi, agar chabgeimage class i bor bo'lsa changeimage class ini o'chiradi, yo'q bo'lsa qo'shadi </div>
+        <div class="demo">
+            <button class="button">Tugmani bosing</button>
+            <br>
+            <img class="image" src="img1/photo (1).jpg" alt="photo">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__div">
+            <a href="https://github.com/Crezycraftuz" target="_blank" class="footer__link github__link">Muallifning github profili</a>
+        </div>
+        <div class="footer__social">
+            Takliflar uchun:
+            <a href="https://t.me/CrezyCraft" target="_blank" class="footer__telegramlink">
+                <img src="img1/Telegram-icon-on-transparent-background-PNG.png" alt="telegram_logo" class="footer__telegram">
+                <span>CrezyCraft</span>
+            </a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

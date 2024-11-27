@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Htmlni o'rganish</title>
+    <link rel="shortcut icon" href="img1/pngfind.com-react-logo-png-6854994.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">
+            <img src="img1/website_logo.png" alt="website_logo" class="logopic" width="90px">
+            Frontend
+        </a>
+        <button class="btn">
+            <div class="dash dash1"></div>
+            <div class="dash dash2"></div>
+            <div class="dash dash3"></div>
+        </button>
+        <ul class="list">
+            <li class="item">
+                <a href="#" class="link">HTML</a>
+            </li>
+            <li class="item">
+                <a href="csspage.html" class="link">CSS</a>
+            </li>
+            <li class="item">
+                <a href="jspage.html" class="link">JavaScript</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 class="title">HTML teglari va atributlari</h1>
+        <div class="section">
+            <div><span class="tag">h1</span> - veb-sahifadagi asosiy sarlavha</div>
+            <div class="code">
+                &lt;h1&gth1 tegi orqali chiqarilgan matn&lt/h1&gt
+            </div>
+            <h1>h1 tegi orqali chiqarilgan matn</h1>
+            <hr class="line">
+            <div><span class="tag">h2</span> - ikkinchi darajali sarlavha</div>
+            <div class="code">
+                &lt;h2&gth2 tegi orqali chiqarilgan matn&lt/h2&gt
+            </div>
+            <h2>h2 tegi orqali chiqarilgan matn</h2>
+            <hr class="line">
+            <div><span class="tag">h6</span> - oltinchi darajali sarlavha</div>
+            <div class="code">
+                &lt;h6&gth6 tegi orqali chiqarilgan matn&lt/h6&gt
+            </div>
+            <h6>h6 tegi orqali chiqarilgan matn</h6>
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">p</span> - oddiy matn uchun</div>
+<pre class="code">
+&lt;p&gtp tegi orqali chiqarilgan matn 1&lt/p&gt
+&lt;p&gtp tegi orqali chiqarilgan matn 2&lt/p&gt
+</pre>
+            <p>p tegi orqali chiqarilgan matn 1</p>
+            <p>p tegi orqali chiqarilgan matn 2</p>
+            <hr class="line">
+            <div><span class="tag">ul</span> - tartibsiz ro'yxat</div>
+            <div><span class="tag">li</span> - ro'yxat elementi</div>
+<pre class="code">
+&lt;ul&gt;
+    &lt;li>item&lt;/li>
+    &lt;li>item&lt;/li>
+&lt;/ul>
+</pre>
+            <ul>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+            <hr class="line">
+            <div><span class="tag">ol</span> - tartibli ro'yxat</div>
+            <div><span class="tag">li</span> - ro'yxat elementi</div>
+<pre class="code">
+&lt;ol&gt;
+    &lt;li>item&lt;/li>
+    &lt;li>item&lt;/li>
+&lt;/ol>
+</pre>
+            <ol>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+            <hr class="line">
+            <p><span class="tag">li</span> tegi <span class="tag">ul</span> yoki <span class="tag">ol</span> teglari bilan birgalikda qo'llanilishi shart</p>
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">button</span> - tugma, knopka</div>
+<pre class="code">
+&lt;button>Button 1&lt;/button>
+&lt;button>Button 2&lt;/button>
+</pre>
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <hr class="line">
+            <div><span class="tag">a</span> - link, havola</div>
+            <div><span class="attr">href</span> - havola manzili</div>
+            <div><span class="attr">target</span> - havola manzilini qaysi oynada ochishni belgilovchi atribyut</div>
+<pre class="code">
+&lt;a href="https://youtube.com" target="_blank">youtube&lt;/a>
+&lt;a href="https://kun.uz" target="_blank">yangliklar&lt;/a>
+</pre>
+            <a href="https://youtube.com" target="_blank">youtube</a>
+            <a href="https://kun.uz" target="_blank">yangliklar</a>
+            <hr class="line">
+            <div><span class="tag">span</span> - oddiy yozuv uchun</div>
+<pre class="code">
+&lt;span>span1&lt;/span>
+&lt;span>span2&lt;/span>
+</pre>
+            <span>span1</span>
+            <span>span2</span>
+            <hr class="line">
+            <div><span class="tag">img</span> - rasmlar uchun</div>
+            <div><span class="attr">src</span> - rasm manbasi, manzili</div>
+            <div><span class="attr">alt</span> - rasmni matn orqali ifodalovchi atribyut</div>
+            <div class="code">
+                &lt;img width="300px" src="img/photo.jpg" alt="photo of a photo"&gt;
+            </div>
+            <img width="300px" src="img1/photo (1).jpg" alt="photo of a photo">
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">form</span> - foydalanuvchi tomonidan <span class="tag">input</span>, <span class="tag">textarea</span> va <span class="tag">select</span> kab teg lar orqali kiritilgan va tanlangan ma'lumotlarni serverga yuboruvchi teg</div>
+            <div><span class="attr">action</span> - server manzili</div>
+            <div><span class="tag">input</span> - ma'lumot kiritish, to'ldirish uchun maydon</div>
+            <div><span class="attr">name</span> - ma'lumot serverga borishi va qanday ma'lumot yuborilganligini bildirib turishi uchun</div>
+            <div><span class="attr">type</span> - input turi</div>
+            <div><span class="attr">placeholder</span> - input ichidagi yo'nalish beruvchi matn</div>
+<pre class="code">
+&ltform action="https://echo.htmlacademy.ru">
+    &ltinput type="text" placeholder="ism-familiya" name="fullname">
+    &ltbutton>Submit button&lt/button>
+&lt/form>
+</pre>
+            <form action="https://echo.htmlacademy.ru">
+                <input type="text" placeholder="ism-familiya" name="fullname">
+                <button>Submit button</button>
+            </form>
+            <hr class="line">
+            <div><span class="tag">label</span> - ma'lumot beruvchi <span class="tag">input</span> ga bog'langan matn</div>
+            <div><span class="attr">for</span> - input ning <span class="attr">id</span> sini yozish va input ga ulash uchun</div>
+            <div><span class="attr">id</span> - takrorlanmas <span class="attr">class</span> ga o'xshash atribyut</div>
+<pre class="code">
+&lt;form action="https://echo.htmlacademy.ru">
+    &lt;label for="nameinput">Ism va familiya:&lt;/label>
+    &lt;input id="nameinput" type="text" placeholder="ism-familiya" name="fullname">
+    &lt;button>Submit button&lt;/button>
+&lt;/form>
+</pre>
+            <form action="https://echo.htmlacademy.ru">
+                <label for="nameinput">Ism va familiya:</label>
+                <input id="nameinput" type="text" placeholder="ism-familiya" name="fullname">
+                <button>Submit button</button>
+            </form>
+            <hr class="line">
+            <div><span class="attr">type</span> - input turi</div>
+            <div><span class="attrval">text</span> - matn uchun</div>
+            <div class="code">
+                &lt;input type="text" name="textinput" placeholder="ism-familiya"&gt;
+            </div>
+            <input type="text" name="textinput" placeholder="ism-familiya">
+            <div><span class="attrval">password</span> - parol uchun</div>
+            <div class="code">
+                &lt;input type="password" name="passwordinput" placeholder="********"&gt;
+            </div>
+            <input type="password" name="passwordinput" placeholder="********">
+            <div><span class="attrval">tel</span> - telefon raqam uchun</div>
+            <div class="code">
+                &lt;input type="tel" name="telinput" placeholder="+998 20 002 00 02"&gt; 
+            </div>
+            <input type="tel" name="telinput" placeholder="+998 20 002 00 02">
+            <div><span class="attrval">date</span> - sana uchun</div>
+            <div class="code">
+                &lt;input type="date" name="dateinput"&gt;
+            </div>
+            <input type="date" name="dateinput">
+            <div><span class="attrval">email</span> - email uchun</div>
+            <div class="code">
+                &lt;input type="email" name="emailinput" placeholder="email">&gt;
+            </div>
+            <input type="email" name="emailinput" placeholder="email">
+            <div><span class="attrval">number</span> - raqamlar uchun</div>
+            <div class="code">
+                &lt;input type="number" name="numberinput" placeholder="36"&gt; 
+            </div>
+            <input type="number" name="numberinput" placeholder="36">
+            <hr class="line">
+            <div><span class="tag">select</span> - umumiy <span class="tag">option</span> lar guruhi</div>
+            <div><span class="tag">option</span> - tanlash uchun variant</div>
+            <div><span class="attr">value</span> - takrorlanmas serverga yuboriluvchi qiymat</div>
+<pre class="code">
+&lt;label for="lang">Tilni tanlang:&lt;/label>
+&lt;select name="lang" id="lang">
+    &lt;option value="uz">Uzbek&lt;/option>
+    &lt;option value="ru">Russian&lt;/option>
+    &lt;option value="en">English&lt;/option>
+&lt;/select>
+</pre>
+            <label for="lang">Tilni tanlang:</label>
+            <select name="lang" id="lang">
+                <option value="uz">Uzbek</option>
+                <option value="ru">Russian</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <hr class="line">
+        <div class="section">
+            <div><span class="tag">table</span> - jadval</div>
+            <div><span class="attr">border</span> - jadval va kataklar uchun ramka</div>
+            <div><span class="tag">tr</span> - jadval qatori</div>
+            <div><span class="tag">th</span> - sarlavha uchun jadval katagi</div>
+            <div><span class="tag">td</span> - oddiy jadval katagi</div>
+<pre class="code">
+&lt;table border="4">
+    &lt;tr>
+        &lt;th>th1&lt;/th>
+        &lt;th>th2&lt;/th>
+        &lt;th>th3&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>td1&lt;/td>
+        &lt;td>td2&lt;/td>
+        &lt;td>td3&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</pre>
+            <table border="4">
+                <tr>
+                    <th>th1</th>
+                    <th>th2</th>
+                    <th>th3</th>
+                </tr>
+                <tr>
+                    <td>td1</td>
+                    <td>td2</td>
+                    <td>td3</td>
+                </tr>
+            </table>
+            <hr class="line">
+            <div><span class="attr">colspan</span> - yonma-yon jadval kataklarini bir-biriga qo'shadi</div>
+            <div><span class="attr">rowspan</span> - ustma-ust jadval kataklarini bir-biriga qo'shadi</div>
+<pre class="code">
+&lt;table border="1">
+    &lt;tr>
+        &lt;th>Katak&lt;/th>
+        &lt;th colspan="3">Katak&lt;/th>
+        &lt;th rowspan="3">Katak&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+        &lt;td rowspan="2">Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td colspan="2">Katak&lt;/td>
+        &lt;td>Katak&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</pre>
+            <table border="1">
+                <tr>
+                    <th>Katak</th>
+                    <th colspan="3">Katak</th>
+                    <th rowspan="3">Katak</th>
+                </tr>
+                <tr>
+                    <td>Katak</td>
+                    <td>Katak</td>
+                    <td rowspan="2">Katak</td>
+                    <td>Katak</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Katak</td>
+                    <td>Katak</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__div">
+            <a href="https://github.com/Crazycraftuz" target="_blank" class="footer__link github__link">Muallifning github profili</a>
+        </div>
+        <div class="footer__social">
+            Takliflar uchun:
+            <a href="https://t.me/CrezyCraft" target="_blank" class="footer__telegramlink">
+                <img src="img1/Telegram-icon-on-transparent-background-PNG.png" alt="telegram_logo" class="footer__telegram">
+                <span>CrezyCraft</span>
+            </a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
